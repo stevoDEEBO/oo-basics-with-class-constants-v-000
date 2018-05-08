@@ -5,7 +5,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-   if BRANDS.detect{|b| b.brand == brand} == false
+   if BRANDS.detect{|b| b.brand == brand} != true
       BRANDS << brand
     end 
   end
