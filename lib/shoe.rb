@@ -5,7 +5,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << @brand
+    if Shoe::BRANDS.detect {|brand| brand == @brand} == false
+      BRANDS << @brand
+    end
   end
 
 #  def brand=(brand)
