@@ -5,17 +5,16 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.detect{|b| b.brand == brand}
-      BRANDS << brand
-
+  #  BRANDS.detect{|b| b.brand == brand}
+  #    BRANDS << brand
   end
 
-#  def brand=(brand)
-#    @brand = brand
-#    if SBRANDS.detect{|b| b.brand == brand} == false
-#      BRANDS << @brand
-#    end
-#  end
+  def brand=(brand)
+    @brand = brand
+    if SBRANDS.detect{|b| b.brand == brand} == false
+      BRANDS << @brand
+    end
+  end
 
   def cobble
     self.condition = "new"
