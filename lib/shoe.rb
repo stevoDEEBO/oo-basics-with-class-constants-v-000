@@ -5,9 +5,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.detect {|b| b.brand == @brand}
+    BRANDS.detect{|b| b.brand == @brand}
       BRANDS << @brand
-    
+
   end
 
 #  def brand=(brand)
