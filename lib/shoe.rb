@@ -9,14 +9,17 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    if BRANDS.detect{|b| b.brand == brand} != true
-       BRANDS << brand
-     end
   end
 
   def brand
     @brand
   end
+
+  def collect_brands
+    if BRANDS.detect{|b| b.brand == brand} != true
+       BRANDS << brand
+     end
+   end
 
 
 
