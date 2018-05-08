@@ -25,5 +25,5 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-  collect_brands
+  @brand.collect_brands
 end
