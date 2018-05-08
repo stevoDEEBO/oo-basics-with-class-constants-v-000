@@ -6,10 +6,13 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if Shoe::BRANDS.detect {|i| i == @brand} == false
+  end
+
+  def brand=(brand)
+    @brand = brand
+    Shoe::BRANDS.detect {|i| i == @brand} == false
       BRANDS << @brand
     end
-  end
 
   def cobble
     self.condition = "new"
