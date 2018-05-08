@@ -1,5 +1,5 @@
 class Shoe
-  attr_accessor :brand, :color, :size, :material, :condition 
+  attr_accessor :brand, :color, :size, :material, :condition
 
   BRANDS = []
 
@@ -9,7 +9,7 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    Shoe::BRANDS.detect {|i| i == @brand} == false
+    #Shoe::BRANDS.detect {|i| i == @brand} == false
       BRANDS << @brand
     end
 
