@@ -7,7 +7,7 @@ class Shoe
     @brand = brand
    if BRANDS.detect{|b| b.brand == brand} != true
       BRANDS << brand
-    end 
+    end
   end
 
   def cobble
