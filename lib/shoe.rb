@@ -9,9 +9,9 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-  #  if Shoe::BRANDS.detect {|brand| brand == @brand} == false
+    if Shoe::BRANDS.detect {|brand| brand == @brand} == false
       BRANDS << @brand
-    #end
+    end
   end
 
   def cobble
