@@ -11,7 +11,7 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    if SBRANDS.detect{|b| b.brand == brand} == false
+    if BRANDS.detect{|b| b.brand == brand} == false
       BRANDS << @brand
     end
   end
